@@ -1,10 +1,10 @@
 
 Download this repo and perofm these steps.
 
-     $ git submodule add --reference ChatSecure git@github.com:ChatSecure/ChatSecure-iOS ./Submodules/ChatSecure
-     $ git submodule update --init --recursive --remote
-     $ bash ./ChatSecure/Submodules/CPAProxy/scripts/build-all.sh
-     $ bash ./ChatSecure/Submodules/OTRKit/scripts/build-all.sh
+     $ git submodule add  git@github.com:ChatSecure/ChatSecure-iOS ./Submodules/ChatSecure
+     $ git submodule update --init --recursive
+     $ bash ./Submodules/ChatSecure/CPAProxy/scripts/build-all.sh
+     $ bash ./Submodules/ChatSecure/OTRKit/scripts/build-all.sh
      $ gem install bundler
      $ bundler install
      $ bundler exec pod install --project-directory=ChatSecure
