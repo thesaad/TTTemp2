@@ -3,12 +3,12 @@ Download this repo and perofm these steps.
 
      $ git submodule add  git@github.com:ChatSecure/ChatSecure-iOS ./Submodules/ChatSecure
      $ git submodule update --init --recursive
-     $ bash ./Submodules/ChatSecure/CPAProxy/scripts/build-all.sh
-     $ bash ./Submodules/ChatSecure/OTRKit/scripts/build-all.sh
+     $ bash ./Submodules/ChatSecure/Submodules/CPAProxy/scripts/build-all.sh
+     $ bash ./Submodules/ChatSecure/Submodules/OTRKit/scripts/build-all.sh
      $ gem install bundler
      $ bundler install
-     $ bundler exec pod install --project-directory=ChatSecure
-     $ bundler exec pod install --project-directory=TellTalkV2
+     $ bundler exec pod install --project-directory=Submodules/ChatSecure
+     $ bundler exec pod install --project
      
      
 Copy over the `Secrets.plist` template:
